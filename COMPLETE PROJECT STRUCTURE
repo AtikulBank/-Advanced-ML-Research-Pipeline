@@ -1,0 +1,25 @@
+Advanced-End-to-End-ML-Research-Pipeline/
+│
+├── data/
+│   └── housing.csv
+│
+├── models/
+│
+├── mlruns/                # MLflow tracking
+│
+├── src/
+│   ├── config.py
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── feature_engineering.py
+│   ├── model.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── predict.py
+│
+├── app.py
+├── Dockerfile
+├── requirements.txt
+├── config.yaml
+├── .gitignore
+└── README.md
