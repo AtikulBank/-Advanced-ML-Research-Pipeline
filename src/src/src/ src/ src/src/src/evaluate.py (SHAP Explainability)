@@ -1,0 +1,13 @@
+import shap
+import joblib
+import pandas as pd
+
+model = joblib.load("models/model.pkl")
+df = pd.read_csv("data/housing.csv")
+
+X = df.drop(columns=["price"])
+
+explainer = shap.Explainer(model)
+shap_values = explainer(X)
+
+shap.plots.beeswarm(shap_values)
