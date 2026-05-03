@@ -1,0 +1,13 @@
+data:
+  path: data/housing.csv
+  target: price
+
+model:
+  type: xgboost
+  n_estimators: 300
+  max_depth: 6
+  learning_rate: 0.05
+
+training:
+  test_size: 0.2
+  random_state: 42
